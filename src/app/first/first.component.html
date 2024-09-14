@@ -1,0 +1,6 @@
+<div [style.background-color]="bg">first component work works!</div>
+
+<app-second
+  (msgToFirst)="traitementDuParent($event)"
+  [bgsecond]="bg"
+></app-second>

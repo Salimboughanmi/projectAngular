@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Candidat } from '../Models/candidat';
 
 @Component({
@@ -8,4 +8,10 @@ import { Candidat } from '../Models/candidat';
 })
 export class ListeComponent {
   @Input() listeCandidat : Candidat[]
+
+  @Output() msgToCv = new EventEmitter ;
+
+  traitementduList(cand){
+    this.msgToCv.emit(cand)
+  }
 }

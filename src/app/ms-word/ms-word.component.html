@@ -1,0 +1,30 @@
+<div
+  [ngStyle]="{
+    backgroundColor: bg,
+    color: col,
+    fontSize: siz,
+    fontFamily: font
+  }"
+>
+  Application de NgStyle
+</div>
+
+<label for="">backGround Color</label>
+<input [(ngModel)]="bg" type="text" class="form-control" />
+
+<label for="">text Color</label>
+<input [(ngModel)]="col" type="text" class="form-control" />
+
+<label for="">Font size </label>
+<input
+  #inp
+  (change)="changesize(inp.value)"
+  type="number"
+  class="form-control"
+/>
+
+<label for="">Police : </label>
+<select class="form-control" [(ngModel)]="font">
+  <option value="phosphate">phosphate</option>
+  <option value="calibri">calibri</option>
+</select>

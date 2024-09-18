@@ -10,6 +10,7 @@ import { ItemComponent } from './item/item.component';
 import { DetailsComponent } from './details/details.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { MsWordComponent } from './ms-word/ms-word.component';
+import { ManageServersComponent } from './manage-servers/manage-servers.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MsWordComponent } from './ms-word/ms-word.component';
     ItemComponent,
     DetailsComponent,
     DirectiveComponent,
-    MsWordComponent
+    MsWordComponent,
+    ManageServersComponent
   ],
   imports: [
     BrowserModule,

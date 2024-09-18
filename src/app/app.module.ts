@@ -11,6 +11,7 @@ import { DetailsComponent } from './details/details.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { MsWordComponent } from './ms-word/ms-word.component';
 import { ManageServersComponent } from './manage-servers/manage-servers.component';
+import { CustomDirDirective } from './custom-dir.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ManageServersComponent } from './manage-servers/manage-servers.componen
     DetailsComponent,
     DirectiveComponent,
     MsWordComponent,
-    ManageServersComponent
+    ManageServersComponent,
+    CustomDirDirective
   ],
   imports: [
     BrowserModule,

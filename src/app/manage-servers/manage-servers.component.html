@@ -5,7 +5,7 @@
       [ngClass]="affecterClass(serv.statut)"
       *ngFor="let serv of listServers"
     >
-      {{ serv.nom }} | {{ serv.type }} | {{ serv.date_d }}
+      {{ serv.nom }} | {{ serv.type | uppercase }} | {{ serv.date_d }}
       <span class="badge bg-secondary">{{ serv.statut }}</span>
     </li>
   </ol>

@@ -12,6 +12,7 @@ import { DirectiveComponent } from './directive/directive.component';
 import { MsWordComponent } from './ms-word/ms-word.component';
 import { ManageServersComponent } from './manage-servers/manage-servers.component';
 import { CustomDirDirective } from './custom-dir.directive';
+import { ShortPipe } from './short.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { CustomDirDirective } from './custom-dir.directive';
     MsWordComponent,
     ManageServersComponent,
     CustomDirDirective,
+    ShortPipe,
   ],
   imports: [
     BrowserModule,

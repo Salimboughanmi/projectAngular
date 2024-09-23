@@ -14,6 +14,7 @@ import { ManageServersComponent } from './manage-servers/manage-servers.componen
 import { CustomDirDirective } from './custom-dir.directive';
 import { ShortPipe } from './short.pipe';
 import { FiltrePipe } from './filtre.pipe';
+import { RecruesComponent } from './recrues/recrues.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { FiltrePipe } from './filtre.pipe';
     CustomDirDirective,
     ShortPipe,
     FiltrePipe,
+    RecruesComponent,
   ],
   imports: [
     BrowserModule,

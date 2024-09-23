@@ -9,5 +9,5 @@ import { Candidat } from '../Models/candidat';
 export class DetailsComponent {
 @Input() CandidatSelected : Candidat
 
-
+constructor(){}
 }

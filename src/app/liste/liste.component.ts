@@ -6,7 +6,7 @@ import { ListeCandidatsService } from '../services/liste-candidats.service';
   selector: 'app-liste',
   templateUrl: './liste.component.html',
   styleUrls: ['./liste.component.css'],
- providers : [ListeCandidatsService]           // pour injecter un service dans un composant
+ //providers : [ListeCandidatsService]           // pour injecter un service dans un composant
 })
 export class ListeComponent {
   //@Input() listeCandidat : Candidat[]

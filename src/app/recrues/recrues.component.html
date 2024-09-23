@@ -1,1 +1,7 @@
-<p>recrues works!</p>
+<div class="container" *ngIf="listRecrues.length != 0">
+  <h3>liste recrues</h3>
+</div>
+
+<ol>
+  <app-item *ngFor="let rec of listRecrues" [oneCandidat]="rec"></app-item>
+</ol>

@@ -15,7 +15,7 @@ new Candidat(3 , 'salim' , "bough" , 30 , "enseignant" , "homer.jpg"),
 new Candidat(4 , 'salim' , "bough" , 30 , "enseignant" , "marge.jpeg"), */]
 
 
-constructor(private firstSer : FirstServiceService , private listCand :ListeCandidatsService){  // ingecter la service de liste condidat service
+constructor(private firstSer : FirstServiceService , private listCand :ListeCandidatsService){  // injecter la service de liste condidat service
   this.firstSer.showMessage();
   this.listCandidats = this.listCand.getAllCandidats()
 }
@@ -24,10 +24,15 @@ constructor(private firstSer : FirstServiceService , private listCand :ListeCand
   this.firstSer.showMessage();
 } */
 
-slectedCandidat : Candidat
+selectedCandidat : Candidat
 
 traitementCv(candu){
-   this.slectedCandidat = candu ;
-   console.log(this.slectedCandidat)
+   this.selectedCandidat = candu ;
+   console.log(this.selectedCandidat)
+}
+
+addNewCandidat(){
+ this.listCand.addCandidat()
+ console.log(this.listCand)
 }
 }

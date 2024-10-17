@@ -15,6 +15,7 @@ import { CustomDirDirective } from './custom-dir.directive';
 import { ShortPipe } from './short.pipe';
 import { FiltrePipe } from './filtre.pipe';
 import { RecruesComponent } from './recrues/recrues.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,7 @@ import { RecruesComponent } from './recrues/recrues.component';
     ShortPipe,
     FiltrePipe,
     RecruesComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
